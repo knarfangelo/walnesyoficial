@@ -10,5 +10,5 @@ import { ZoomDetectorService } from './components/zoom-detector.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-
+  title = 'walnesy';
 }

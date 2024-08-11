@@ -5,5 +5,5 @@ import { BlogWalnesyComponent } from './components/blog-walnesy/blog-walnesy.com
 
 export const routes: Routes = [
     {path: '', component: WalnesyComponent},
-    {path: 'blog', component: BlogWalnesyComponent},
+    {path: 'blog/', component: BlogWalnesyComponent},
 ];
