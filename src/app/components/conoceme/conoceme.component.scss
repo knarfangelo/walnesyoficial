@@ -1,0 +1,74 @@
+header{
+  color: #1E3524;
+}
+
+h1{
+  font-family: "bluefish", sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  line-height: 72px;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.empresario{
+  width: 640px;
+  height: 350px;
+  font-family: "Kanit", sans-serif;;
+  font-size: 50px;
+  display: flex;
+  font-style: italic;
+  color: #13A14B;
+  align-items: center;
+  position: relative;
+
+  border: 5px solid #01321D;
+  p{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+}
+
+.politico{
+  width: 640px;
+  height: 350px;
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  display: flex;
+  color: #01321D;
+  align-items: center;
+  border: 5px solid #158F4B;
+  position: relative;
+  p{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+  }	
+}
+
+.alcanza, .logo{
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+}

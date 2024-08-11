@@ -1,0 +1,80 @@
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  min-height: 50vh;
+  background-color: #01321D;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+
+}
+
+.derechos-de-autor{
+  font-size: 20px;
+  background-color: #13A14B;
+  height: auto;
+}
+
+.walnesycontigo{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-1{
+  width: 360px;
+  height: 240px;
+  position: relative;
+  img{
+  width: 100%;
+  }
+}
+
+.redes{
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+}
+.mapa{
+  color: #fff;
+  h2{
+    text-decoration: underline 5px;
+    text-underline-offset: 10px;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.derechos-de-autor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #13A14B;
+  color: #fff;
+  font-size: 20px;
+  img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 20px;
+  }
+}
