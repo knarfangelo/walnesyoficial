@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <header>
       <h1>#FuerzaQueTeActiva</h1>
       <p>La política es un medio para servir y lo hacemos con el proposito de impulsar el liderazgo transformador</p>
-      <a href="">
+      <a href="#formulario">
         ÚNETE AL VOLUNTARIADO
       </a>
     </header>
