@@ -1,0 +1,46 @@
+
+h1{
+  font-family: "Bluefish";
+  color:#1E3524;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  line-height: 72px;
+  text-align: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 310px 310px 310px 310px;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+a{
+  text-decoration: none;
+}
+article{
+  width: 310px;
+}
+img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 310px;
+  height: 280px;
+}
+.fecha{
+  color: #6C757D;
+}
+.title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #495057;
+}
+.description{
+  font-size: 14px;
+  font-weight: 400;
+  color: #6C757D;
+}

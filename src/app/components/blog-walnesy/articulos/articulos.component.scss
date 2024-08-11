@@ -1,0 +1,45 @@
+header{
+  color: #fff;
+}
+
+h1{
+  font-family: "Bluefish";
+  color:#1E3524;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  line-height: 72px;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+img{
+
+  width: 420px;
+  display: flex;
+  height: 350px;
+}
+.blog1,.blog2,.blog3{
+  position: relative;
+}
+.contenido{
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.fecha{
+  font-size: 14px;
+}
+a{
+  color: #fff;
+}
