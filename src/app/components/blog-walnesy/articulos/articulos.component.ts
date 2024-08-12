@@ -1,9 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, signal } from '@angular/core';
+import { register, SwiperContainer } from 'swiper/element';
+import { SwiperOptions } from 'swiper/types';
+import { IArticulos } from './BDArticulos/IArticulos';
+import { articulosJSON } from './BDArticulos/articulosJSON';
+register();
 
 @Component({
   selector: 'app-articulos',
   standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
   ],
@@ -13,22 +19,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     ARTÍCULOS
   </h1>
     <main>
-      <a href="https://elnuevodiario.com.do/creacion-y-adecuacion-de-normas-para-nuevos-modelos-de-negocios-evolucionando-a-los-tiempos-de-la-innovacion/" target="_blank" class="blog1">
-        <img src="/articulos/articulo3.jpg" alt="">
-        <div class="contenido"><p class="fecha">27.11.2023</p>
-        <p>Creación y adecuación de normas para nuevos modelos de negocios evoluci...</p></div>
-        </a>
-      <a href="https://elnuevodiario.com.do/digitalizacion-servicios-municipales-iniciativa-para-prevenir-lavado-de-activos-evasion-fiscal-y-eficientizar-servicios-publicos/" target="_blank" class="blog2">
-        <img src="/articulos/articulo2.jpg" alt="">
-        <div class="contenido">    <p class="fecha">23.10.2023</p>
-        <p>Digitalización servicios municipales Iniciativa para prevenir lavado de...</p></div>
-      </a>
-      <a href="https://elnuevodiario.com.do/inversion-extranjera-directa-en-la-zona-especial-de-desarrollo-fronterizo/" target="_blank" class="blog3">
-        <img src="/articulos/articulo1.jpg" alt="">
-        <div class="contenido">   <p class="fecha">24.07.2023</p>
-        <p>Inversión extranjera directa en la zona especial de desarrollo fronterizo.</p></div>
-     
-</a>
+        <swiper-container>
+          @for (item of swiperObjects; track $index) {
+          <swiper-slide>
+            <div class="conteiner">
+            <img [src]="item.img" alt="">
+            </div>
+          </swiper-slide>}
+        </swiper-container>
     </main>
 
   </header>
@@ -36,4 +34,42 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './articulos.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ArticulosComponent { }
+export class ArticulosComponent { 
+  
+  swiperElements = signal<SwiperContainer | null>(null);
+  swiperObjects: IArticulos[] = articulosJSON;
+
+
+
+
+  ngOnInit(): void {
+    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperOptions: SwiperOptions = {
+      navigation:{
+        enabled:true,
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      slidesPerView: 'auto',
+      speed: 3000,
+      breakpoints: {
+        0:{
+          slidesPerView:1,
+        },
+        640: {
+          slidesPerView:3,
+        },
+        1024: {
+          slidesPerView:3,
+        },
+      },
+    };
+    Object.assign(swiperElemConstructor!, swiperOptions);
+    this.swiperElements.set(swiperElemConstructor as SwiperContainer);
+    this.swiperElements()?.initialize();
+  }
+
+
+
+
+}

@@ -2,45 +2,45 @@ import { IArticulos } from "./IArticulos";
 
 export const articulosJSON:IArticulos[] = [
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 1,
+        img: "/articulos/articulo3.jpg",
+        date: "27.11.2023",
+        title: "Creación y adecuación de normas para nuevos modelos de negocios evoluci..."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 2,
+        img: "/articulos/articulo2.jpg",
+        date: "23.10.2023",
+        title: "Digitalización servicios municipales Iniciativa para prevenir lavado de..."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 3,
+        img: "/articulos/articulo1.jpg",
+        date: "24.07.2023",
+        title: "Inversión extranjera directa en la zona especial de desarrollo fronterizo."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 4,
+        img: "/articulos/articulo3.jpg",
+        date: "27.11.2023",
+        title: "Creación y adecuación de normas para nuevos modelos de negocios evoluci..."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 5,
+        img: "/articulos/articulo2.jpg",
+        date: "23.10.2023",
+        title: "Digitalización servicios municipales Iniciativa para prevenir lavado de..."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
+        id: 6,
+        img: "/articulos/articulo1.jpg",
+        date: "24.07.2023",
+        title: "Inversión extranjera directa en la zona especial de desarrollo fronterizo."
     },
     {
-        id: 0,
-        img: "",
-        date: "",
-        title: ""
-    }
+        id: 7,
+        img: "/articulos/articulo3.jpg",
+        date: "24.07.2023",
+        title: "Inversión extranjera directa en la zona especial de desarrollo fronterizo."
+    },
 ]

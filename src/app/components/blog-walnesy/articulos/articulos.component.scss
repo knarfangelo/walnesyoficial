@@ -1,45 +1,24 @@
-header{
-  color: #fff;
+main{
+  width: 1300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  gap: 20px;
+}
+.conteiner{
+  box-sizing: border-box;
+  padding: 20px;
+}
+img{
+  width: 100%;
 }
 
 h1{
-  font-family: "Bluefish";
+  font-family: "Molde";
   color:#1E3524;
   font-style: italic;
   font-size: 60px;
   text-align: center;
   line-height: 72px;
   text-align: center;
-}
-
-main{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  font-size: 22px;
-  margin-bottom: 50px;
-}
-
-img{
-
-  width: 420px;
-  display: flex;
-  height: 350px;
-}
-.blog1,.blog2,.blog3{
-  position: relative;
-}
-.contenido{
-  position: absolute;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 20px;
-  padding-bottom: 0;
-}
-.fecha{
-  font-size: 14px;
-}
-a{
-  color: #fff;
 }
