@@ -11,20 +11,21 @@ img{
   object-fit: contain;
 }
 a{
-  font-family: "Bluefish";
+  font-family: "Molde";
+  font-style: italic;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 250px;
   text-decoration: none;
   color: #fff;
-  height: 50px;
-  font-size: 24px;
+  height: 60px;
+  font-size: 35px;
   line-height: 28px;
   border-radius: 25px;
   background-color: #14A14C;
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 0;
   right: 0;
   margin: auto;

@@ -11,8 +11,9 @@ header{
 }
 
 a{
-  font-family: "Bluefish";
+  font-family:'Molde', 'Trebuchet MS', sans-serif;
   display: flex;
+  font-style: italic;
   align-items: center;
   justify-content: center;
   width: 55%;
@@ -28,6 +29,7 @@ a{
 h1,p{
   margin: 0;
   padding: 0;
+
 }
 
 main{
@@ -35,8 +37,9 @@ main{
 }
 
 h1{
-  font-family:Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Molde', 'Trebuchet MS', sans-serif;
+  font-style: italic;
   font-weight: bold;
   color: #fff;
-  font-style: italic;
+  font-size: 80px;
 }

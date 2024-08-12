@@ -21,7 +21,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <div class="politico">
           <div>
           <img class="logo" src="/conoceme/fuerzadelpueblo.png" alt=""><p>POLÍTICO</p></div>
-          <img src="/conoceme/walnesy-politico.png" alt="">
+          <img class="walnesy" src="/conoceme/walnesy-politico.png" alt="">
         </div>
       </main>
 

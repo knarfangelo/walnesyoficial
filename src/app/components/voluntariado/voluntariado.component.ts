@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <header>
       <h1>#FuerzaQueTeActiva</h1>
-      <p>La política es un medio para servir y lo hacemos con el proposito de impulsar el liderazgo transformador</p>
+      <p>La política es un medio para servir y lo hacemos con el propósito de impulsar el liderazgo transformador.</p>
       <a href="#formulario">
         ÚNETE AL VOLUNTARIADO
       </a>

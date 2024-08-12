@@ -3,7 +3,7 @@ header{
 }
 
 h1{
-  font-family: "Bluefish";
+  font-family: "Molde";
   color:#1E3524;
   font-style: italic;
   font-size: 60px;
@@ -42,4 +42,9 @@ img{
 }
 a{
   color: #fff;
+}
+
+.titulo{
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }

@@ -17,14 +17,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <img src="/articulos/articulo3.jpg" alt="">
         <div class="contenido"><p class="fecha">27.11.2023</p>
         <p>Creación y adecuación de normas para nuevos modelos de negocios evoluci...</p></div>
-        
-</a>
+        </a>
       <a href="https://elnuevodiario.com.do/digitalizacion-servicios-municipales-iniciativa-para-prevenir-lavado-de-activos-evasion-fiscal-y-eficientizar-servicios-publicos/" target="_blank" class="blog2">
         <img src="/articulos/articulo2.jpg" alt="">
         <div class="contenido">    <p class="fecha">23.10.2023</p>
         <p>Digitalización servicios municipales Iniciativa para prevenir lavado de...</p></div>
-    
-</a>
+      </a>
       <a href="https://elnuevodiario.com.do/inversion-extranjera-directa-en-la-zona-especial-de-desarrollo-fronterizo/" target="_blank" class="blog3">
         <img src="/articulos/articulo1.jpg" alt="">
         <div class="contenido">   <p class="fecha">24.07.2023</p>

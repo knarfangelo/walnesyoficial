@@ -3,7 +3,7 @@ header{
 }
 
 h1{
-  font-family: "bluefish", sans-serif;
+  font-family: "Molde", sans-serif;
   font-style: italic;
   font-size: 60px;
   text-align: center;
@@ -21,7 +21,7 @@ main{
   background-image: url("/conoceme/1fondo.jpg");
   width: 640px;
   height: 350px;
-  font-family: "Kanit", sans-serif;;
+  font-family: "Molde", sans-serif;;
   font-size: 50px;
   display: flex;
   font-style: italic;
@@ -29,14 +29,13 @@ main{
   align-items: center;
   position: relative;
 
-  border: 5px solid #01321D;
+  border: 5px solid #158F4B;
   p{
     position: absolute;
     bottom: 0;
     margin: 0;
     margin-bottom: 20px;
     margin-left: 20px;
-    font-weight: bolder;
   }
 }
 
@@ -44,13 +43,13 @@ main{
   width: 640px;
   height: 350px;
   background-image: url("/conoceme/2fondo.jpg");
-  font-family: "Kanit", sans-serif;
+  font-family: "Molde", sans-serif;
   font-size: 50px;
   font-style: italic;
   display: flex;
   color: #01321D;
   align-items: center;
-  border: 5px solid #158F4B;
+  border: 5px solid #01321D;
   position: relative;
   p{
     position: absolute;
@@ -58,8 +57,10 @@ main{
     margin: 0;
     margin-bottom: 20px;
     margin-left: 20px;
-    font-weight: bold;
   }	
+  .walnesy{
+    width: 300px;
+  }
 }
 
 .alcanza, .logo{
