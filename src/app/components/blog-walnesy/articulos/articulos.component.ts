@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, signal } from '@angular/core';
 import { register, SwiperContainer } from 'swiper/element';
 import { SwiperOptions } from 'swiper/types';
 import { IArticulos } from './BDArticulos/IArticulos';
 import { articulosJSON } from './BDArticulos/articulosJSON';
+
 register();
 
 @Component({
@@ -15,61 +16,63 @@ register();
   ],
   template: `
     <header>
-  <h1>
-    ARTÍCULOS
-  </h1>
+      <h1>ARTÍCULOS</h1>
+    </header>
     <main>
-        <swiper-container>
-          @for (item of swiperObjects; track $index) {
-          <swiper-slide>
-            <div class="conteiner">
-            <img [src]="item.img" alt="">
-            </div>
-          </swiper-slide>}
-        </swiper-container>
+      <swiper-container init="false" class="swiper">
+        <swiper-slide *ngFor="let item of swiperObjects">
+            <a [href]="item.link" target="_blank" class="contenido">
+              <img [src]="item.img" alt="">
+              <article>
+                <p>{{item.date}}</p>
+                <p class="titulo">{{item.title}}</p>
+              </article>
+            </a>
+        </swiper-slide>
+      </swiper-container>
+      <button id="custom-prev" class="custom-swiper-button-prev"> < </button>
+      <button id="custom-next" class="custom-swiper-button-next"> > </button>
     </main>
-
-  </header>
   `,
-  styleUrl: './articulos.component.scss',
+  styleUrls: ['./articulos.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ArticulosComponent { 
+export class ArticulosComponent implements AfterViewInit { 
   
   swiperElements = signal<SwiperContainer | null>(null);
   swiperObjects: IArticulos[] = articulosJSON;
 
+  ngAfterViewInit(): void {
+    const swiperElemConstructor = document.querySelector('.swiper') as SwiperContainer;
 
-
-
-  ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('swiper-container');
     const swiperOptions: SwiperOptions = {
-      navigation:{
-        enabled:true,
-        nextEl:'.swiper-button-next',
-        prevEl:'.swiper-button-prev',
-      },
-      slidesPerView: 'auto',
-      speed: 3000,
+      pagination: true,
+      loop: true,
+      speed: 1000,
+      spaceBetween: 50,
       breakpoints: {
-        0:{
-          slidesPerView:1,
+        0: {
+          slidesPerView: 1,
         },
-        640: {
-          slidesPerView:3,
+        1200: {
+          slidesPerView: 2,
         },
-        1024: {
-          slidesPerView:3,
+        1500: {
+          slidesPerView: 3,
         },
       },
     };
+
     Object.assign(swiperElemConstructor!, swiperOptions);
-    this.swiperElements.set(swiperElemConstructor as SwiperContainer);
+
+    this.swiperElements.set(swiperElemConstructor);
     this.swiperElements()?.initialize();
+
+    // Añadir eventos a los botones personalizados
+    const nextButton = document.getElementById('custom-next');
+    const prevButton = document.getElementById('custom-prev');
+
+    nextButton?.addEventListener('click', () => this.swiperElements()?.swiper.slideNext());
+    prevButton?.addEventListener('click', () => this.swiperElements()?.swiper.slidePrev());
   }
-
-
-
-
 }

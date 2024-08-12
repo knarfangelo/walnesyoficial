@@ -32,7 +32,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
             <input type="text">
           </label>
           <div class="direccion">
-          <h3>DIRECCIÓN:BlueMall Santo Domingo</h3>
+          <h3>DIRECCIÓN : BlueMall Santo Domingo</h3>
           <h3>TELÉFONO : +1 809-955-3000</h3>
           </div><a  (click)="enviado()">ENVIAR</a></form>
       } @else {
