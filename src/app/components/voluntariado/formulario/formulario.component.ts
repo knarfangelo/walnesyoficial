@@ -40,8 +40,8 @@ import { FooterComponent } from "../../footer/footer.component";
     } @else {
         <div class="enviado">
           <img src="/banner/logo.png" alt="">
-        <h2>GRACIAS POR CONTACTARNOS</h2>
-        <p>En breve nos pondremos en contacto contigo</p></div>
+        <h2>GRACIAS POR UNIRTE A LA #FuerzaQueTeActiva</h2>
+        <p>En breve nos pondremos en contacto contigo.</p></div>
       }
     </header>
     <app-footer></app-footer>

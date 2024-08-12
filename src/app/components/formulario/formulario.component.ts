@@ -9,6 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `
     <header>
+      <div class="conteiner">
       <main>
         @if (formulario) {
 
@@ -43,7 +44,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       }
       </main>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4685.956394056036!2d-69.9435163240514!3d18.472676770634102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e4e39a2ab5%3A0x98df0764eaed40ca!2sBlueMall%20Santo%20Domingo!5e1!3m2!1ses-419!2spe!4v1723419203488!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </header>
+      </div>  </header>
   `,
   styleUrl: './formulario.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
