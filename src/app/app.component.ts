@@ -10,11 +10,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'walnesy';
-  translatePage(lang: string) {
-    const googleTranslateElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-    if (googleTranslateElement) {
-      googleTranslateElement.value = lang;
-      googleTranslateElement.dispatchEvent(new Event('change'));
-    }
-  }
 }

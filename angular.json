@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "prerender": {
-              "discoverRoutes": true
+              "discoverRoutes": false
             },
             "outputPath": "dist/walnesy",
             "index": "src/index.html",
