@@ -24,7 +24,7 @@ import { FooterComponent } from "../../footer/footer.component";
         <label for="">APELLIDOS
           <input type="text" name="" id="">
         </label>
-        <label for="">MUNICIPIO
+        <label for="">CIRCUNSCRIPCIÓN
           <input type="text" name="" id="">
         </label>
         <label for="">CELULAR
