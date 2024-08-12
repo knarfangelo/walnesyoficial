@@ -21,7 +21,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           </ul>
         </div>
         <div class="mapa">
-          <h2>MAPA DEL SITIO</h2>
+          <h2>ENLACES</h2>
           <ul>
             <li><a href="#inicio">INICIO</a></li>
             <li><a href="#conoceme">CONÓCEME</a></li>
