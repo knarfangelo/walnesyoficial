@@ -1,47 +1,47 @@
 header{
-  background-color: #f8f9fa;
   width: 100%;
-  display: flex;
   height: calc(100vh - 80px);
+  display: flex;
   position: relative;
+  justify-content: center;
 }
 .fondo{
-  object-fit: cover;
   width: 100%;
   height: 100%;
-}
-.contenido{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  bottom: 0;
+  left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   margin: auto;
-  margin-left: 50px;
-  justify-content: center;
-  height: calc(100% - 80px);
-}
-.logo{
-  width: 15%;
-}
-.banner-con-flecha{
-  box-sizing: border-box;
-  
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
 }
 
-.walnesy{
+img{
+  width: auto;
+  height: auto;
+}
+
+main{
   display: flex;
-  width: 50%;
-  height: calc( 100% - 80px);
-  position: absolute;
-  bottom: 0;
-  align-items: end;
-  justify-content: end;
-  right: 0;
-  img{
-    width: 100%;
-    object-fit: contain; 
-    height: 100%;
+  
+  height: auto;
+  position: relative;
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    .logo{
+      width: 100%;
+      height: 25%;
+      object-fit: contain;
+      object-position: left;
+    }
+    .banner-con-flecha{
+      width: 100%;
+      height: 75%;
+      object-fit: contain;
+    }
   }
 }

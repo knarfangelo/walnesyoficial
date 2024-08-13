@@ -13,13 +13,13 @@ import { NavegacionComponent } from "../navegacion/navegacion.component";
     <app-navegacion></app-navegacion>
     <header>
       <img class="fondo" src="/banner/fondoverde.png" alt="">
+    <main>
       <div class="contenido">
         <img class="logo" src="/banner/logo.png" alt="">
         <img class="banner-con-flecha" src="/banner/walnesy-con-flecha.png" alt="">
       </div>
-      <div class="walnesy">
-        <img src="/banner/walnesy.png" alt="">
-      </div>
+      <img class="walnesy" src="/banner/walnesy.png" alt="">
+    </main>
     </header>
   `,
   styleUrl: './inicio.component.scss',
