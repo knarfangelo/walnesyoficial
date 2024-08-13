@@ -23,7 +23,6 @@ img{
   width: auto;
   height: auto;
 }
-
 main{
   display: flex;
   
@@ -43,5 +42,30 @@ main{
       height: 75%;
       object-fit: contain;
     }
+  }
+}
+
+@media (width < 800px) {
+  main{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    height: 100%;
+  }
+  .contenido{
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-con-flecha{
+    height: 500px;
+  }
+  .walnesy{
+    height: 100%;
+    margin: auto;
   }
 }
