@@ -18,7 +18,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       </ul>
       <div class="separacion"></div>
       <ul class="icons">
-        <li><a href="https://www.instagram.com/walnesyborquez/?hl=es"target="_blank"><img src="/icons/instagram.png" alt="instagram de walnesy"></a></li>
+        <li><a href="https://www.instagram.com/walnesyborquez/"target="_blank"><img src="/icons/instagram.png" alt="instagram de walnesy"></a></li>
         <li><a href=""><img src="/icons/tiktok.png" alt="tiktok de walnesy"></a></li>
         <li><a href="https://www.facebook.com/share/YJFeZJQCcqyWWj5y/?mibextid=qi2Omg" target="_blank"><img src="/icons/facebook.png" alt="facebook de walnesy"></a></li>  
         <li><a href="https://x.com/walnesyborquez" target="_blank"><img src="/icons/twitter.png" alt="twitter de walnesy"></a></li>
@@ -29,4 +29,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './navegacion.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavegacionComponent { }
+export class NavegacionComponent { 
+  
+}
