@@ -30,6 +30,7 @@ main{
   position: relative;
   .contenido{
     display: flex;
+    width: 50%;
     flex-direction: column;
     .logo{
       width: 100%;
@@ -45,6 +46,7 @@ main{
   }
 }
 .walnesy{
+  width: 50%;
   object-fit: contain;
 }
 
