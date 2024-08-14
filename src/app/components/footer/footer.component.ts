@@ -31,10 +31,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           </ul>
         </div>
       </footer>
-      <div class="derechos-de-autor">
-        <img src="logochoose.png" alt="">
+      <a href="https://chooseagencia.com/" class="derechos-de-autor">
+        <img src="logochoose.png" alt="logo choose agencia">
         <p>Desarrollado por &#64;chooseagencia</p>
-      </div>
+      </a>
   `,
   styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
