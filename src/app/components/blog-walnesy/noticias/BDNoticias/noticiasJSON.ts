@@ -1,6 +1,6 @@
 import { INoticias } from "./INoticias";
 
-export const noticiasJSON:INoticias[] = [
+export const noticiasJSON: INoticias[] = [
     {
         id: 1,
         title: 'Walnesy Borquez se opone al desamparo de productores agropecuarios y empre...',
@@ -9,15 +9,6 @@ export const noticiasJSON:INoticias[] = [
         image: '/noticias/1.jpg',
         content: 'https://www.dominicanoshoy.com/2023/12/28/walnesy-borquez-se-opone-al-desamparo-de-productores-agropecuarios-y-empresarios-del-campo-dominicano/',
         category: 'categoria 1'
-    },
-    {
-        id: 2,
-        title: 'Walnesy Borquez visita el colegio Saint John',
-        description: 'Charla sobre la Constitución a los jóvenes del Colegio, Saint John en La Romana. El político Walnesy Borquez visitó a los jóvenes estudiantes del colegio Saint Joh...',
-        date: '06.02.2020',
-        image: '/noticias/2.jpg',
-        content: 'https://www.youtube.com/watch?v=K6iE0ct_MJ4',
-        category: 'categoria 2'
     },
     {
         id: 3,
@@ -35,6 +26,15 @@ export const noticiasJSON:INoticias[] = [
         date: '28.12.2023',
         image: '/noticias/4.jpg',
         content: 'https://puntualrd.com/walnesy-borquez-se-opone-al-desamparo-de-los-productores-agropecuarios-comerciantes-y-empresarios-del-campo/',
+        category: 'categoria 3'
+    },
+    {
+        id: 8,
+        title: '“Nuestra producción no solo nos ha permitido abastecer al pueblo domini...',
+        description: 'El dirigente político de la Fuerza del Pueblo afirmó, que la República Dominicana ha garantizado a nuestro pueblo la seguridad alimentaria por mucho tiempo.',
+        date: '28.12.2023',
+        image: '/noticias/8.jpg',
+        content: 'https://elnuevodiario.com.do/borquez-rechaza-desamparo-a-productores-agropecuarios-y-comerciantes/',
         category: 'categoria 3'
     },
     {
@@ -59,18 +59,18 @@ export const noticiasJSON:INoticias[] = [
         id: 7,
         title: '¿Cierre o militarización de las fronteras de la República Dominicana ante...',
         description: 'Considerando la situación, las medidas tomadas por el gobierno implican un gasto militar para una economía desacelerada como la nuestra y a su vez una amenaz...',
-        date: '20.10.2023',
+        date: '22.09.2023',
         image: '/noticias/7.jpg',
         content: 'https://puntualrd.com/walnesy-borquez-hace-un-llamado-al-gobierno-y-sugiere-prudencia-frente-a-la-crisis-con-haiti/',
         category: 'categoria 3'
     },
     {
-        id: 8,
-        title: '“Nuestra producción no solo nos ha permitido abastecer al pueblo domini...',
-        description: 'El dirigente político de la Fuerza del Pueblo afirmó, que la República Dominicana ha garantizado a nuestro pueblo la seguridad alimentaria por mucho tiempo.',
-        date: '19.08.2024',
-        image: '/noticias/8.jpg',
-        content: 'https://elnuevodiario.com.do/borquez-rechaza-desamparo-a-productores-agropecuarios-y-comerciantes/',
-        category: 'categoria 3'
+        id: 2,
+        title: 'Walnesy Borquez visita el colegio Saint John',
+        description: 'Charla sobre la Constitución a los jóvenes del Colegio, Saint John en La Romana. El político Walnesy Borquez visitó a los jóvenes estudiantes del colegio Saint Joh...',
+        date: '06.02.2020',
+        image: '/noticias/2.jpg',
+        content: 'https://www.youtube.com/watch?v=K6iE0ct_MJ4',
+        category: 'categoria 2'
     }
-]
+];
