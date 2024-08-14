@@ -44,6 +44,9 @@ main{
     }
   }
 }
+.walnesy{
+  object-fit: contain;
+}
 
 @media (width < 800px) {
   main{
@@ -67,5 +70,7 @@ main{
   .walnesy{
     height: 100%;
     margin: auto;
+    width: auto;
+    object-fit: contain;
   }
 }
