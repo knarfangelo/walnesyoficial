@@ -31,7 +31,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           </ul>
         </div>
       </footer>
-      <a href="https://chooseagencia.com/" class="derechos-de-autor">
+      <a href="https://chooseagencia.com/" target="_blank" class="derechos-de-autor">
         <img src="logochoose.png" alt="logo choose agencia">
         <p>Desarrollado por &#64;chooseagencia</p>
       </a>
