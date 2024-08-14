@@ -33,8 +33,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
             <input type="text">
           </label>
           <div class="direccion">
-          <h3>DIRECCIÓN : BlueMall Santo Domingo</h3>
-          <h3>TELÉFONO : +1 809-955-3000</h3>
+          <h3>DIRECCIÓN : Torre empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
+          <h3>TELÉFONO : +1(809) 603-4833 </h3>
           </div><a  (click)="enviado()">ENVIAR</a></form>
       } @else {
         <div class="enviado">
@@ -43,8 +43,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <p>En breve nos pondremos en contacto contigo</p></div>
       }
       </main>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4685.956394056036!2d-69.9435163240514!3d18.472676770634102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e4e39a2ab5%3A0x98df0764eaed40ca!2sBlueMall%20Santo%20Domingo!5e1!3m2!1ses-419!2spe!4v1723419203488!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>  </header>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1164.0986044438912!2d-69.94146711646792!3d18.472587730337025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e4e39a2ab5%3A0x98df0764eaed40ca!2sBlueMall%20Santo%20Domingo!5e1!3m2!1ses-419!2spe!4v1723665537325!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </header>
   `,
   styleUrl: './formulario.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

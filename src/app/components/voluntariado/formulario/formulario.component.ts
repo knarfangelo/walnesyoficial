@@ -34,8 +34,8 @@ import { FooterComponent } from "../../footer/footer.component";
           <input type="text" name="" id="">
         </label>
       </form>
-      <h4>DIRECCIÓN : BlueMall Santo Domingo</h4>
-      <h4>TELÉFONO : +1 809-995-3000</h4>
+      <h3>DIRECCIÓN : Torre empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
+      <h3>TELÉFONO : +1(809) 603-4833 </h3>
       <button (click)="enviado()">ENVIAR</button>
     } @else {
         <div class="enviado">
