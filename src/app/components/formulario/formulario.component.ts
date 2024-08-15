@@ -12,8 +12,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <div class="conteiner">
       <main>
         @if (formulario) {
-
-      
         <form action="">
           <h2>CONTÁCTANOS</h2>
           <label for="">

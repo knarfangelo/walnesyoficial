@@ -17,15 +17,17 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin: 0 20px;
   font-size: 22px;
   margin-bottom: 50px;
 }
 
 img{
-
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   display: flex;
   height: 350px;
+  object-fit: cover;
 }
 .blog1,.blog2,.blog3{
   position: relative;
