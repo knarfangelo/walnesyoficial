@@ -37,7 +37,6 @@ main{
       width: 100%;
       height: 25%;
       box-sizing: border-box;
-      padding-left: 3%;
       object-fit: contain;
       object-position: left;
     }
@@ -56,27 +55,23 @@ main{
 
 @media (width < 800px) {
   main{
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
-    height: 100%;
-  }
-  .contenido{
-    align-items: center;
-    justify-content: center;
-  }
-  .logo{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+  }
+  main .contenido{
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
   }
   .banner-con-flecha{
-    height: 500px;
+    width: 100%;
   }
   .walnesy{
-    height: 100%;
-    margin: auto;
-    width: auto;
-    object-fit: contain;
+    height: 50%;
+    width: 100%;
   }
 }

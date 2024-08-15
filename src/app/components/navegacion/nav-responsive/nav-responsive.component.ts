@@ -1,25 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.component";
 
 @Component({
-  selector: 'app-navegacion',
+  selector: 'app-nav-responsive',
   standalone: true,
   imports: [
     CommonModule,
-    NavResponsiveComponent
-],
+  ],
   template: `
-    <nav>
-      <ul class="nav">
-        <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#conoceme">CONÓCEME</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#secomp">SECOMP</a></li>
-        <li><a href="#voluntariado">VOLUNTARIADO</a></li>
-      </ul>
-      <div class="separacion"></div>
+     <nav>
       <ul class="icons">
+        <li><button><img class="burguer" src="icons/burguer-walnesy.svg" alt=""></button></li>
         <li><a href="https://www.instagram.com/walnesyborquez/"target="_blank"><img src="/icons/instagram.png" alt="instagram de walnesy"></a></li>
         <li><a href=""><img src="/icons/tiktok.png" alt="tiktok de walnesy"></a></li>
         <li><a href="https://www.facebook.com/walnesy" target="_blank"><img src="/icons/facebook.png" alt="facebook de walnesy"></a></li>  
@@ -27,11 +18,8 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
         <li><a href="https://www.youtube.com/@walnesyborquez5071" target="_blank"><img src="/icons/youtube.png" alt="youtube de walnesy" target="_blank"></a></li>
       </ul>
     </nav>
-    <app-nav-responsive></app-nav-responsive>
   `,
-  styleUrl: './navegacion.component.scss',
+  styleUrl: './nav-responsive.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavegacionComponent { 
-
-}
+export class NavResponsiveComponent { }
