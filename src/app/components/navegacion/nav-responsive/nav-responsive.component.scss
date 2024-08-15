@@ -4,13 +4,10 @@
   background-color: #01321D;
 }
 
-
 header{
   position: fixed;
-  top: 0;
   z-index: 100;
-  width: 100%;
-  height: 100vh;
+  top: 0;
 }
 
 img{
@@ -20,7 +17,11 @@ img{
 
 nav{
   background-color: #01321D;
+  width: 100%;
   height: 80px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
 }
 
 ul{
@@ -53,6 +54,9 @@ button{
   main{
     position: absolute;
     height: 100vh;
+    width: 300px;
+    z-index: 100;
+    position: fixed;
     top: 0;
     transform: translateX(-100%);
     transition: transform 1s ease; 
@@ -70,17 +74,13 @@ button{
   main.open {
     transform: translateX(0);
   }
+
+
   .navegacion{
     width: 300px;
     box-sizing: border-box;
     padding: 20px;
     background-color: #fff;
-  }
-  .background.open{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: #00000050;
   }
   .navegacion .lista a {
     text-decoration: none;
@@ -124,6 +124,11 @@ button{
   nav{
     display: none;
   }
-
+  .relleno{
+    display: none;
+  }
+  header{
+    display: none;
+  }
 
 }
