@@ -1,3 +1,18 @@
+.relleno{
+  width: 100%;
+  height: 80px;
+  background-color: #01321D;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+
 img{
   width: 60%;
   max-width: 40px;
@@ -17,7 +32,7 @@ ul{
 .icons{
   display: flex;
 }
-a,button{
+a,.burguer{
   display: flex;
   width: 100%;
   height: 100%;
@@ -35,12 +50,80 @@ button{
 .icons li{
   flex: 1;
 }
-
+  main{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease; 
+  }
+  main.open {
+    transform: translateX(0);
+  }
+  main{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease; 
+  }
+  main.open {
+    transform: translateX(0);
+  }
+  .navegacion{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .background.open{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #00000050;
+  }
+  .navegacion .lista a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #13A14B;
+  }
+  .navegacion li{
+    display: flex;
+    margin: 20px 0;
+  }
+  .navegacion li:first-child{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    margin-top: 0;
+  }
+  .navegacion button img{
+    width: 150px;
+    height: auto;
+  }
+  .navegacion a{
+    display: flex;
+    justify-content: start;
+  }
+  .noticias-p{
+    width: auto;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #13A14B;
+  }
+  .separador{
+    width: 100%;
+    height: 2px;
+    background-color: #13A14B;
+  }
 @media (width > 800px) {
 
   nav{
     display: none;
   }
-  
+
 
 }
