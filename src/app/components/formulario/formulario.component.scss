@@ -114,12 +114,15 @@ a{
     font-size: 20px;
   }
   input{
-    width: 80%;
+    width: 90%;
     padding: 10px;
   }
   h3, .enviado, a{
     font-size: 20px;
     padding: 0;
+  }
+  h3{
+    margin: 0 25px;
   }
   .conteiner{
     flex-direction: column;
