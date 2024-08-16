@@ -16,7 +16,7 @@ import { FooterComponent } from "../../footer/footer.component";
   
     <header>
       @if(formulario) {
-      <h1>ÚNETE A LA #FuerzaQueTeActiva</h1>
+      <h1>#FuerzaQueTeActiva</h1>
       <form action="">
         <label for="">NOMBRES
           <input type="text" name="" id="">
@@ -24,7 +24,10 @@ import { FooterComponent } from "../../footer/footer.component";
         <label for="">APELLIDOS
           <input type="text" name="" id="">
         </label>
-        <label for="">CIRCUNSCRIPCIÓN
+        <label for="">PROVINCIA
+          <input type="text" name="" id="">
+        </label>
+        <label for="">MUNICIPIO
           <input type="text" name="" id="">
         </label>
         <label for="">CELULAR
@@ -34,7 +37,7 @@ import { FooterComponent } from "../../footer/footer.component";
           <input type="text" name="" id="">
         </label>
       </form>
-      <h3>DIRECCIÓN : Torre empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
+      <h3>DIRECCIÓN: Torre Empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
       <h3>TELÉFONO : +1(809) 603-4833 </h3>
       <button (click)="enviado()">ENVIAR</button>
     } @else {
