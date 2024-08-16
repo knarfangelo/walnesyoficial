@@ -10,6 +10,7 @@ h1{
 
 main{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 60px;
   justify-content: center;

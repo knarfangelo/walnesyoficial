@@ -30,8 +30,10 @@ register();
             </a>
         </swiper-slide>
       </swiper-container>
+      <div class="custom-swiper-buttons">
       <button id="custom-prev" class="custom-swiper-button-prev"> < </button>
       <button id="custom-next" class="custom-swiper-button-next"> > </button>
+      </div>
     </main>
   `,
   styleUrls: ['./articulos.component.scss'],

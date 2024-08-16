@@ -73,3 +73,17 @@ button{
   font-size: 25px;
   border: 4px solid #13A14B;
 }
+
+@media (width < 800px) {
+  
+  .custom-swiper-button-next, .custom-swiper-button-prev{
+    position: static;
+    margin: 0;
+  }
+  .custom-swiper-buttons{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
