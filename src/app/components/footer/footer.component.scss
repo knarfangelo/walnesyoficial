@@ -85,9 +85,10 @@ h2{
 @media (width < 800px) {
   footer{
     flex-direction: column;
-    gap: 0px;
+    gap: 50px;
+    height: auto;
     box-sizing: border-box;
-    padding: 0px 0px;
+    padding: 50px 0px;
   }
   
   .derechos-de-autor{
