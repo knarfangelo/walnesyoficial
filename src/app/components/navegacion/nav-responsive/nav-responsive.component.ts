@@ -30,7 +30,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <li class="lista"><a (click)="navegar()" href="#secomp">SECOMP</a></li>
         <li class="lista"><a (click)="navegar()" href="#voluntariado">VOLUNTARIADO</a></li>
         <li><div class="separador"></div></li>
-        <li class="noticias"><a href="" class="noticias-p" >NOTICIAS</a></li>
+        <li class="noticias"><a href="/blog-walnesy/#noticias" class="noticias-p" (click)="navegar()" >NOTICIAS</a></li>
+        <li class="noticias"><a href="/blog-walnesy/#articulos" class="noticias-p" (click)="navegar()" >ARTICULOS</a></li>
       </ul>
       <div class="background"></div>
       </main>

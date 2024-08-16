@@ -25,8 +25,8 @@ import { EnlacesImportantesComponent } from "./enlaces-importantes/enlaces-impor
 ],
   template: `
     <app-inicio></app-inicio>
-    <app-articulos></app-articulos>
-    <app-noticias></app-noticias>
+    <app-articulos id="articulos"></app-articulos>
+    <app-noticias id="noticias"></app-noticias>
     <div class="separador"></div>
     <app-enlaces-importantes></app-enlaces-importantes>
     <app-voluntariado></app-voluntariado>

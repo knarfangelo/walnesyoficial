@@ -44,3 +44,25 @@ img{
   font-weight: 400;
   color: #6C757D;
 }
+
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: repeat(2, 310px); /* 2 columnas */
+  }
+}
+
+/* Cuando la pantalla es menor a 600px, cambia a 1 columna */
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr; /* 1 columna */
+    grid-template-rows: auto; /* Filas automáticas */
+    margin: 25px;
+  }
+  article {
+    width: 100%; /* Ajusta el ancho del artículo al contenedor */
+  }
+  img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente */
+  }
+}
