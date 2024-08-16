@@ -54,7 +54,7 @@ export class ArticulosComponent implements AfterViewInit {
         0: {
           slidesPerView: 1,
         },
-        1200: {
+        800: {
           slidesPerView: 2,
         },
         1500: {
