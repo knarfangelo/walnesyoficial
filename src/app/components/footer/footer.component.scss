@@ -82,3 +82,23 @@ h2{
     margin: 0 20px;
   }
 }
+
+@media (width < 800px) {
+  footer{
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+    padding: 50px 0px;
+  }
+  
+  .derechos-de-autor{
+    font-size: 15px;
+  }
+  .panel-1{
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .redes{
+    width: 65%;
+  }
+}
