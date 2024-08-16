@@ -38,7 +38,7 @@ import { FooterComponent } from "../../footer/footer.component";
         </label>
       </form>
       <h3>DIRECCIÓN: Torre Empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
-      <h3>TELÉFONO : +1(809) 603-4833 </h3>
+      <h3>TEL: +1 (809) 603-4833 </h3>
       <button (click)="enviado()">ENVIAR</button>
     } @else {
         <div class="enviado">

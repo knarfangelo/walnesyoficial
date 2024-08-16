@@ -1,5 +1,5 @@
 header{
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Molde';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,6 @@ h1{
 }
 label{
   font-size: 22px;
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
 }
 form{
@@ -54,6 +53,7 @@ h4{
   padding: 0;
 }
 h3{
+  font-size: 25px;
   margin: 0;
 }
 button{

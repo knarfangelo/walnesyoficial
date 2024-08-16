@@ -32,7 +32,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           </label>
           <div class="direccion">
           <h3>DIRECCIÓN: Torre Empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
-          <h3>TELÉFONO: +1(809) 603-4833 </h3>
+          <h3>TEL: +1 (809) 603-4833 </h3>
           </div><a  (click)="enviado()">ENVIAR</a></form>
       } @else {
         <div class="enviado">
