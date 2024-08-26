@@ -67,7 +67,7 @@ h3{
   margin: 0;
 }
 
-a{
+button{
   font-family: "Molde";
   display: flex;
   align-items: center;
@@ -107,6 +107,22 @@ a{
   justify-content: center;
   align-items: center;
 }
+
+/* formulario.component.scss */
+
+.invalid {
+  outline: 2px solid #ffee00;
+}
+
+.error {
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+.container-error{
+  margin: 5px;
+}
+
 
 @media (width < 800px) {
   header{

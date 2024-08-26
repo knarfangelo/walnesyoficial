@@ -25,6 +25,7 @@ h1{
 label{
   font-size: 25px;
   font-weight: bold;
+  position: relative;
 }
 form{
   display: flex;
@@ -43,9 +44,24 @@ input{
   height: 55px;
   box-shadow: 10px 10px 0px #13A14B;
   border: 0;
-  border-radius: 25px;
   margin-bottom: 25px;
+  border-radius: 25px;
 }
+.invalid {
+  outline: 2px solid #ffee00;
+}
+
+.error {
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+.container-error{
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
 
 h4{
   font-size: 24px;
