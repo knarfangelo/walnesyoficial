@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [CommonModule],
   template: `
     <header>
-      <a href="blog-walnesy"><h1>BLOG</h1></a>
+      <a href="blog-walnesy#articulos"><h1>BLOG</h1></a>
       <main>
         <a href="blog-walnesy" class="blog1">
           <img src="/blog/1blog.jpg" alt="" />

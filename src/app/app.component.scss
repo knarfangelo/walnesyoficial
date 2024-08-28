@@ -1,0 +1,55 @@
+.voiceflow-chat-container {
+    position: fixed; /* Mantener el widget siempre visible en la pantalla */
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior de la pantalla */
+    right: 20px; /* Ajusta la distancia desde el borde derecho de la pantalla */
+    width: 300px; /* Ajusta el ancho del widget */
+    height: 400px; /* Ajusta la altura del widget */
+    z-index: 1000; /* Asegura que el widget esté por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde cualquier contenido que sobresalga del contenedor */
+  }
+  
+  /* Estilo para cuando el chat está minimizado */
+  .voiceflow-chat-minimized {
+    height: 50px; /* Altura mínima cuando está minimizado */
+    width: 50px; /* Ancho mínimo cuando está minimizado */
+    border-radius: 50%; /* Convierte el widget en un círculo cuando está minimizado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el widget minimizado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff; /* Color de fondo del botón minimizado */
+    color: white; /* Color del icono o texto del botón minimizado */
+  }
+  
+  /* Estilo para el icono de chat */
+  .voiceflow-chat-icon {
+    font-size: 24px; /* Tamaño del icono */
+  }
+  
+  /* Ajustes para el contenido interno del chat */
+  .voiceflow-chat-content {
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Fondo blanco para el contenido del chat */
+    border: none; /* Elimina el borde */
+  }
+  
+  /* Si deseas ajustar el contenido del iframe del chat */
+  .voiceflow-chat-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+  }
+  
+  /* Estilo para el botón de cerrar chat */
+  .voiceflow-chat-close {
+    position: absolute;
+    top: 10px; /* Posición desde el borde superior */
+    right: 10px; /* Posición desde el borde derecho */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }

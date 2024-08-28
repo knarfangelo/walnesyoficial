@@ -14,7 +14,7 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
       <ul class="nav">
         <li><a href="#inicio">INICIO</a></li>
         <li><a href="#conoceme">CONÓCEME</a></li>
-        <li><a href="#blog">BLOG</a></li>
+        <li><a href="/blog-walnesy#articulos">BLOG</a></li>
         <li><a href="#secomp">SECOMP</a></li>
         <li><a href="#voluntariado">VOLUNTARIADO</a></li>
       </ul>
