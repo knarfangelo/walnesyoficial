@@ -20,6 +20,7 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
     <app-navegacion></app-navegacion>
   
     <header>
+
       @if(formulario) {
       <h1>#FuerzaQueTeActiva</h1>
       <form [formGroup]='formContacto' (ngSubmit)="onSubmit()">
@@ -29,7 +30,6 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='nombres' 
             [ngClass]="{'invalid': formContacto.get('nombres')?.invalid && (formContacto.get('nombres')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('nombres')?.invalid && (formContacto.get('nombres')?.touched || formulario === true)">
-            <small class="error">Este campo es obligatorio</small>
           </div>
         </label>
 
@@ -39,7 +39,6 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='apellidos' 
             [ngClass]="{'invalid': formContacto.get('apellidos')?.invalid && (formContacto.get('apellidos')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('apellidos')?.invalid && (formContacto.get('apellidos')?.touched || formulario === true)">
-            <small class="error">Este campo es obligatorio</small>
           </div>
         </label>
 
@@ -49,7 +48,6 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='provincia' 
             [ngClass]="{'invalid': formContacto.get('provincia')?.invalid && (formContacto.get('provincia')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('provincia')?.invalid && (formContacto.get('provincia')?.touched || formulario === true)">
-            <small class="error">Este campo es obligatorio</small>
           </div>
         </label>
 
@@ -59,7 +57,6 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='municipio' 
             [ngClass]="{'invalid': formContacto.get('municipio')?.invalid && (formContacto.get('municipio')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('municipio')?.invalid && (formContacto.get('municipio')?.touched || formulario === true)">
-            <small class="error">Este campo es obligatorio</small>
           </div>
         </label>
 
@@ -69,7 +66,6 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='celular' 
             [ngClass]="{'invalid': formContacto.get('celular')?.invalid && (formContacto.get('celular')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('celular')?.invalid && (formContacto.get('celular')?.touched || formulario === true)">
-            <small class="error">Este campo es obligatorio</small>
           </div>
         </label>
 
@@ -79,11 +75,13 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
             formControlName='email' 
             [ngClass]="{'invalid': formContacto.get('email')?.invalid && (formContacto.get('email')?.touched || formulario === true)}">
           <div class="container-error" *ngIf="formContacto.get('email')?.invalid && (formContacto.get('email')?.touched || formulario === true)">
-            <small class="error" *ngIf="formContacto.get('email')?.errors?.['required']">Este campo es obligatorio</small>
-            <small class="error" *ngIf="formContacto.get('email')?.errors?.['email']">Formato de email inválido</small>
           </div>
         </label>   
-        <button type="submit">ENVIAR</button>
+        @if(!showAlert){
+        <h3 class="datos">DEBES COMPLETAR TODOS LOS DATOS</h3>
+    
+      }
+        <button class="enviar" type="submit">ENVIAR</button>
       </form>
       <h3>DIRECCIÓN: Torre Empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
       <h3>TEL: +1 (809) 603-4833 </h3>
@@ -94,7 +92,7 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
         <h2>GRACIAS POR UNIRTE A LA #FuerzaQueTeActiva</h2>
         <p>En breve nos pondremos en contacto contigo.</p></div>
       }
-    </header>
+      </header>
     <app-footer></app-footer>
   `,
   styleUrl: './formulario.component.scss',
@@ -103,7 +101,7 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
 export class FormularioComponent { 
   private apiUrl = 'https://www.walnesyborquez.com/api/api2.php';
   formulario = true;
-
+  showAlert = true;
   constructor(private http: HttpClient) {}
 
   formContacto = new FormGroup({
@@ -114,22 +112,27 @@ export class FormularioComponent {
     municipio: new FormControl('', [Validators.required]),
     celular: new FormControl('', [Validators.required]),
     });
-
-  onSubmit() {
-    if (this.formContacto.valid) {
-      const formData = this.formContacto.value;
-      this.formulario = false;
-      this.http.post(this.apiUrl, formData, {
-        headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-      }).subscribe(
-        response => {
-          console.log('Form Submitted:', response);
-          this.formulario = false;
-        },
-        error => {
-          console.error('Error:', error);
-        }
-      );
+    onSubmit() {
+      if (this.formContacto.valid) {
+        const formData = this.formContacto.value;
+        this.formulario = false;
+        this.http.post(this.apiUrl, formData, {
+          headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+        }).subscribe(
+          response => {
+            console.log('Form Submitted:', response);
+            this.formulario = false;
+          },
+          error => {
+            console.error('Error:', error);
+          }
+        );
+      } else {
+        this.showAlert = false;  // Activa la visualización de la alerta
+        setTimeout(() => {
+          this.showAlert = true;  // Vuelve a mostrar la alerta después de 3 segundos
+        }, 1000);
+      }
     }
-  }
+    
  }

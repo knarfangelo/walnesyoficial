@@ -14,13 +14,19 @@ header{
   gap: 20px;
   padding: 50px 0;
 }
-
+.datos{
+  color: #fff;
+  margin: 8px 0;
+}
 h1{
   font-family:'Molde', 'Trebuchet MS', sans-serif;
   font-style: italic;
   font-size: 55px;
   margin: 0;
   font-weight: bold;
+}
+.enviar{
+  cursor: pointer;
 }
 label{
   font-size: 25px;
@@ -48,7 +54,6 @@ input{
   border-radius: 25px;
 }
 .invalid {
-  outline: 2px solid #ffee00;
 }
 
 .error {

@@ -14,6 +14,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   ],
   template: `
     <header>
+ 
       <div class="conteiner">
       <main>
         @if (formulario) {
@@ -27,7 +28,6 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
       [ngClass]="{'invalid': formContacto.get('nombres')?.invalid && (formContacto.get('nombres')?.touched || formulario === true)}" 
       type="text">
     <div class="container-error" *ngIf="formContacto.get('nombres')?.invalid && (formContacto.get('nombres')?.touched || formulario === true)">
-      <small class="error">Este campo es obligatorio</small>
     </div>
   </label>
 
@@ -38,7 +38,6 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
       [ngClass]="{'invalid': formContacto.get('apellidos')?.invalid && (formContacto.get('apellidos')?.touched || formulario === true)}" 
       type="text">
     <div class="container-error" *ngIf="formContacto.get('apellidos')?.invalid && (formContacto.get('apellidos')?.touched || formulario === true)">
-      <small class="error">Este campo es obligatorio</small>
     </div>
   </label>
 
@@ -49,7 +48,6 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
       [ngClass]="{'invalid': formContacto.get('celular')?.invalid && (formContacto.get('celular')?.touched || formulario === true)}" 
       type="text">
     <div class="container-error" *ngIf="formContacto.get('celular')?.invalid && (formContacto.get('celular')?.touched || formulario === true)">
-      <small class="error">Este campo es obligatorio</small>
     </div>
   </label>
 
@@ -60,14 +58,15 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
       [ngClass]="{'invalid': formContacto.get('email')?.invalid && (formContacto.get('email')?.touched || formulario === true)}" 
       type="text">
     <div class="container-error" *ngIf="formContacto.get('email')?.invalid && (formContacto.get('email')?.touched || formulario === true)">
-      <small class="error" *ngIf="formContacto.get('email')?.errors?.['required']">Este campo es obligatorio</small>
-      <small class="error" *ngIf="formContacto.get('email')?.errors?.['email']">Formato de email inválido</small>
     </div>
   </label>
 
   <div class="direccion">
     <h3>DIRECCIÓN: Torre Empresarial BlueMall, Piso 22, Distrito Nacional, R.D.</h3>
     <h3>TEL: +1 (809) 603-4833 </h3>
+    @if(!showAlert){
+        <h3 class="datos">DEBES COMPLETAR TODOS LOS DATOS</h3>
+      }
     <button type="submit">ENVIAR</button>
   </div>
 </form>
@@ -89,6 +88,7 @@ export class FormularioComponent {
 
   private apiUrl = 'https://www.walnesyborquez.com/api/api.php';
   formulario = true;
+  showAlert = true;
 
   constructor(private http: HttpClient) {}
 
@@ -114,6 +114,11 @@ export class FormularioComponent {
             console.error('Error:', error);
           }
         );
+      } else {
+        this.showAlert = false;
+        setTimeout(() => {
+          this.showAlert = true;  // Vuelve a mostrar la alerta después de 3 segundos
+        }, 1000);
       }
     }
 
